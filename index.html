@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Raleway:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Neuton:wght@200&family=Raleway:wght@100&display=swap');
+    </style>
+        
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav> <div class="navv">
+         
+                      <div class="logo"> <img src="logo.png"></div> 
+                      <div>
+                                <ul>
+                                       <li class="divclass"><a href="home">Home</a> <div class="layer"></div></li>
+                                       <li class="divclass"><a href="home">About</a><div class="layer"></div></li>
+                                       <li class="divclass"><a href="home">Contact</a><div class="layer"></div></li>
+                                </ul>
+                      </div>
+                      <div class="search"> 
+                                   <input type="text" placeholder="Search"> 
+                      </div>
+                      <div class="searchicon" >
+                                     <img src="icons8-search-50.png" height="20px"> 
+                      </div>
+       
+        
+                      <div class="runlogo">     <img src="runlogo.gif"></div>
+         </div>       
+    </nav>
+ </header>
+                                                
+    <main>    <div class="mainclass">
+                                            <div class="mainblock"> 
+                                                            <div class="man">
+                                                            <div class="maincontent">
+                                                                       <div class="context">Taste Hai <br> Tabhi Toh<br>  Best Hai . . .</div>
+                                                                       <div class="conimg"><img src="cooking.png"></div>
+                                                            </div>
+                                                            </div>
+                                            </div>
+                                            <div class="what">What's on your mind?</div>
+                                            <div class="foodtype">
+                                                           <div class="foodi">  
+                                                                     <div class="vegg">
+                                                                              <img src="vegfood.png" onclick="toggleMenu()">
+                                                                     </div>
+                                                                              vegetarian <br> food
+                                                           </div>
+                                                             
+                                                           <div class="foodi">  
+                                                                     <div class="nonvegg">
+                                                                               <img src="nonveg.png" onclick="toggleMenu2()"> 
+                                                                     </div>
+                                                                       Non-vegetarian <br> food
+                                                             </div>
+                                            </div>
+
+             <!-- for veg menu -->
+                  <div class="checkupdown" id="vegimenu" onclick="toggleMenu()" >
+                                    
+                                     <div class="choosefood" >
+
+
+                                                            <div class="foodii">  
+                                                                   <div class="v1">
+                                                                           <img src="v1.png">
+                                                                   </div>
+                                                                   <p1>    indian thali </p1>  
+                                                            </div>
+
+
+
+                                                            <div class="foodii">  
+                                                                <div class="v1">
+                                                                        <img src="v2.png">
+                                                                </div>
+                                                                     <p1>   Dosa</p1>
+                                                           </div>
+
+
+
+
+                                                           <div class="foodii">  
+                                                            <div class="v1">
+                                                                    <img src="v3.png">
+                                                            </div> <p1>  Somosa</p1>  
+                                                     </div>   <br>
+                                                                                                         
+                    </div></div>
+
+
+             <!-- for Non-veg menu -->
+
+
+                    <div class="checkupdown2" id="Nonvegimenu" onclick="toggleMenu2()">
+                                    
+                                     <div class="choosefood" >
+
+
+                                                            <div class="foodii">  
+                                                                   <div class="v1">
+                                                                           <img src="nv1.png">
+                                                                   </div>
+                                                                   <p1>   Tandoori Chicken </p1>  
+                                                            </div>
+
+
+
+                                                            <div class="foodii">  
+                                                                <div class="v1">
+                                                                        <img src="nv2.png">
+                                                                </div>
+                                                                     <p1> Fride Chicken Rice</p1>
+                                                           </div>
+
+
+
+
+                                                           <div class="foodii">  
+                                                            <div class="v1">
+                                                                    <img src="nv3.png">
+                                                            </div> <p1>  Chicken Kebab </p1>  
+                                                     </div>                                                           
+                    </div></div>
+
+                                                  <div class="orderspace">
+                                                                <a href="orderpage.html">Order Now</a>
+                                                  </div>
+        </div>
+   </main>
+    
+
+    <footer><div class="footerr">
+            Copyright 2023 — The Rudra Foods . Designed by Krishna Bhamare
+        </div>
+   </footer> 
+    
+
+    
+                   <!-- javascript add krtoy -->
+
+
+   <script>
+
+
+           let vegimenu=document.getElementById("vegimenu");
+
+                                           function toggleMenu(){
+                                           vegimenu.classList.toggle("openfood");
+                                                                }     
+
+            let Nonvegimenu=document.getElementById("Nonvegimenu");
+    
+                                            function toggleMenu2(){
+                                            Nonvegimenu.classList.toggle("openNonfood");
+                                                                  }
+
+
+
+   </script>
+
+
+
+</body>
+</html>                                  

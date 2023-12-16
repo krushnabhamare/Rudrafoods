@@ -1,0 +1,325 @@
+*{margin: 0;padding: 0;}
+                                                                                               /* This is the header */
+
+nav{
+        height: 9vh;
+        width: 100vw;
+        overflow: hidden;              
+    }
+    
+.navv{
+    height: 9vh;
+    width: 100vw;
+    background-color:rgb(50, 114, 216);  
+    display: flex;  
+    overflow: hidden;
+    position: absolute;   
+    align-items: center;
+              
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 3vw;
+}
+
+nav ul li{
+  margin: 0vh 2vh 0vh 2vh;
+  
+}
+                                        nav ul li::after{
+                                                  content: "";
+                                                  background-color: red;
+                                                  height: 2px;
+                                                  width: 0%;
+                                                  display: block;
+                                                  margin: auto;
+                                                  transition: 0.5s;
+                                               }
+                                        nav ul li:hover::after{
+                                            width: 100%;
+                                        }       
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Neuton', serif;
+   font-size: 22px;
+}
+
+.logo img{
+    margin: 0 0 0 2vw ;
+    height: 10vh;
+}
+.search input{
+   margin: 0 0 0 3vw;
+    height: 3vh;
+    width: 15vw;
+}
+.searchicon{
+    
+    margin: 0 0 0 1vh;
+    cursor: pointer;
+}
+
+
+.runlogo img{
+    height: 10vh;
+    margin: 0 0 0 3vw;
+    transform: translate(0vw);
+    animation: runlogoo 4s ease-in-out   infinite forwards;
+}
+                                                                    @keyframes runlogoo{
+                                                                                         0%{transform: translate(0vw);}
+                                                                                        100%{transform: translate(53vw);}
+                                                                                    }
+ 
+
+
+
+
+ 
+
+
+                                                                          /* This is the Footer */
+.footerr{
+    height: 20px;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', "sans-serif";
+}
+                                               
+
+
+                                                                            /* This is the main */
+
+main{
+    display: block;
+}
+.mainclass{
+    min-height: calc(100vh - 9vh - 20px);
+    width: 100vw;
+    
+}
+
+            /*main cont*/
+.mainblock{
+    width: 100vw;
+    height: 38vh;
+    position: relative;
+    
+}
+.man{
+    width: 100vw; height: 10vh;
+    position: relative;
+    background-color: rgb(143, 51, 143);
+}
+
+.maincontent{
+    width: 100vw;
+    height: 38vh;
+    background-color: rgb(143, 51, 143);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.context{
+    
+    width: auto;
+    font-family: 'Neuton', serif;
+    font-size: 10vh;
+}
+
+.conimg img{ 
+    margin: 0 0 0 2vw;
+    width: 20vw;
+}
+
+
+
+.what{
+    margin: 2vh 0 0 0 ;
+    font-size: 7vh;
+    font-family: 'Raleway', "sans-serif";
+    text-align: center;
+}
+
+
+.foodtype{
+    display: flex;
+    justify-content: center;
+}
+.foodi{
+    margin: 4vh 3vh 0 3vh ;
+    text-align: center;
+}
+.vegg img {
+    
+    height: 15vh;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+                                                            .vegg img:hover{  height:18vh;  }
+.nonvegg img {
+    display: block;
+    height: 15vh;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+                                                            .nonvegg img:hover{  height:18vh;  }
+
+
+
+.checkupdown{
+    margin: 2vh 0 0 0;
+    position: relative;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+} 
+                                                                         .checkupdown.openfood{
+                                                                                          height: 35vh;
+                                                                                              }
+.choosefood{
+ background-color: rgb(211, 210, 210);
+ height: auto;
+ width: 45vw;
+ font-family: 'Neuton', serif;
+ font-weight: bold;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ border-radius: 9px;
+ box-shadow: 0 0 4px 0;
+}     
+
+.foodii{
+    text-align: center;
+    margin: 2vh 2vh;
+}
+.v1 img{
+    height:20vh ;
+    width: 25vh;
+    transition: 0.5s;
+}
+                                                                           .v1 img:hover{  width:28vh;
+                                                                                          height: 23vh;  }
+
+/* for non-veg menu we can copy the container*/
+
+.checkupdown2{
+    margin: 2vh 0 0 0;
+    position: relative;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+} 
+                                                        .checkupdown2.openNonfood{
+                                                                             height: 35vh;
+                                                                             }
+
+.orderspace{
+    margin: 2vh 0;
+    align-items: center;
+     width: 5vw;
+    display: block;
+    background-color:rgb(50, 114, 216);  
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0;
+    position: relative;
+    left:48vw;
+    
+}
+.orderspace a{text-decoration: none;
+    color: #fff;}
+
+
+                                                                                             /*orderpage*/
+.orderpage{
+   width: 100vw;
+   height: 100vh;
+}                                                                                            
+
+.make{
+   position: absolute;
+   left:34vw;
+   top:22vh;
+}
+
+                                                      /*@media Quries*/
+    
+@media screen and (max-width:600px){
+
+    nav ul li a{
+       font-size: 13px;
+    }
+}
+@media screen and (max-width:488px){
+    .context{
+        font-size: 5vh;
+    }
+    .maincontent{
+        height: 20vh;
+    }
+    .mainblock{
+        height: 20vh;
+    }
+    nav{
+        height: auto;   
+        display: flex;
+        flex-wrap: wrap; 
+        position: relative;        
+    }
+    .navv{
+        height: auto;   
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;  
+    }
+    .search input{
+         margin: 0 0 0 3vw;
+         height: 3vh;
+         width: 30vw;
+     }
+     .vegg img {
+        width: 40vw;
+    }
+    .nonvegg img {
+       width: 40vw;
+    }
+    
+    .choosefood{
+       width: 70vw;
+    }
+    .checkupdown.openfood{
+        height: auto;
+            }
+    .checkupdown2.openNonfood{
+        height: auto;
+        }
+
+    .orderspace{
+        width: 20vw;
+        text-align: center;
+        position: relative;
+        left: 42vw;
+     }  
+     .mainclass{
+        min-height: calc(100vh - 5vh - 20px);
+        width: 100vw;
+     }
+}
